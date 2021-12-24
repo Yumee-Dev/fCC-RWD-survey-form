@@ -1,0 +1,142 @@
+:root {
+  --color-heading: #bb00dd;
+  --color-text: #dd00ff;
+  --color-border: #770099;
+}
+
+* {
+  font-family: "MuseoModerno", cursive;
+}
+
+body {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/4/4a/Cyberpunk_city_%284065413356%29.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: var(--color-heading);
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.5), -1px -1px white;
+}
+
+#description {
+  margin-top: 0.5rem;
+  text-align: center;
+  line-height: 2rem;
+  color: var(--color-heading);
+  text-shadow: 0 1rem rgba(255, 0, 255, 0.2), 0 2rem rgba(255, 0, 255, 0.05);
+}
+
+form {
+  width: 600px;
+  margin: 2.5rem auto 0;
+  padding: 8px 24px 14px;
+  background-color: rgba(5, 0, 10, 0.9);
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+form div {
+  margin: 16px 0;
+}
+
+label {
+  color: var(--color-text);
+}
+
+input,
+select,
+textarea {
+  display: block;
+}
+
+[type="text"],
+[type="email"],
+[type="number"],
+select,
+fieldset,
+textarea {
+  width: 400px;
+  background-color: transparent;
+  color: var(--color-text);
+  padding: 4px 8px;
+  border-radius: 6px;
+  border-color: var(--color-border);
+  box-sizing: border-box;
+}
+
+option {
+  background-color: black;
+}
+
+fieldset {
+  padding-bottom: 8px;
+}
+
+legend {
+  padding: 0 8px;
+  color: var(--color-text);
+}
+
+[type="radio"],
+[type="checkbox"] {
+  appearance: none;
+  display: inline-block;
+  border-radius: 35%;
+  color: purple;
+  width: 1.15em;
+  height: 1.15em;
+  background-color: transparent;
+  border: 0.15em solid var(--color-border);
+  transition: background-color 0.3s;
+}
+
+[type="radio"] {
+  transform: translateY(0.075em);
+}
+
+[type="checkbox"] {
+  transform: translateY(0.25em);
+}
+
+[type="radio"]:checked,
+[type="checkbox"]:checked {
+  background-color: #400080;
+}
+
+fieldset label {
+  padding: 0 8px;
+}
+
+button {
+  display: block;
+  padding: 6px 18px;
+  margin: 0 auto;
+  color: var(--color-text);
+  background-color: #050010;
+  border-radius: 6px;
+  border-color: var(--color-border);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #100020;
+}
+
+@media (max-width: 700px) {
+  form {
+    width: 80%;
+  }
+
+  [type="text"],
+  [type="email"],
+  [type="number"],
+  select {
+    width: 80%;
+  }
+}
